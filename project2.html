@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    header .cta-button {
+      background: white;
+      color: #4CAF50;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 1rem;
+      background: #f9f9f9;
+    }
+
+    .feature {
+      background: white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature img {
+      width: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .feature h3 {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .feature p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer p {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header>
+    <h1>Welcome to GreenGrow</h1>
+    <p>Empowering sustainable agriculture through smart farming solutions.</p>
+    <a href="#" class="cta-button">Sign Up Now</a>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/50/4CAF50/plant-under-sun.png" alt="Smart Irrigation" />
+      <h3>Smart Irrigation</h3>
+      <p>Reduce water waste and optimize plant growth with automated systems.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/50/4CAF50/cow.png" alt="Livestock Monitoring" />
+      <h3>Livestock Monitoring</h3>
+      <p>Track health, movement, and growth of your animals with ease.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/50/4CAF50/tractor.png" alt="Automated Equipment" />
+      <h3>Automated Equipment</h3>
+      <p>Enhance efficiency with smart tractors and farming machinery.</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div>
+      <p>Contact us: <a href="mailto:info@greengrow.com">info@greengrow.com</a> | Phone: +234-706-591-7720</p>
+      <p>
+        Follow us:
+        <a href="#">Twitter</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a>
+      </p>
+    </div>
+    <p>&copy; 2025 GreenGrow. All rights reserved.</p>
+  </footer>
+</body>
+</html>
