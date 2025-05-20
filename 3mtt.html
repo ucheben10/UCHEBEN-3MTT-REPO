@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product/Service Landing Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-section .cta-button {
+            background-color: #FFD700;
+            color: #333;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-section .cta-button:hover {
+            background-color: #e6c200;
+        }
+
+        /* Features Section Styles */
+        .features-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .features-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #4CAF50;
+        }
+
+        .features-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .feature-item .icon {
+            font-size: 3em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature-item p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Footer Section Styles */
+        .footer-section {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9em;
+        }
+
+        .footer-section .contact-details p {
+            margin: 5px 0;
+        }
+
+        .footer-section .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .footer-section .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-section .copyright {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #bbb;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5em;
+            }
+
+            .hero-section p {
+                font-size: 1em;
+            }
+
+            .features-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-item {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 60px 15px;
+            }
+
+            .hero-section h1 {
+                font-size: 2em;
+            }
+
+            .hero-section .cta-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+
+            .features-section {
+                padding: 40px 15px;
+            }
+
+            .features-section h2 {
+                font-size: 2em;
+            }
+
+            .feature-item {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Unlock Your Potential with Our Innovative Solution</h1>
+        <p>Experience seamless productivity and achieve your goals faster with our cutting-edge platform designed for modern professionals.</p>
+        <a href="#signup" class="cta-button">Sign Up Now</a>
+    </section>
+
+
+<!-- Features Section -->
+    <section class="features-section">
+        <h2>Key Features That Make a Difference</h2>
+        <div class="features-container">
+            <div class="feature-item">
+                <span class="material-icons icon">speed</span>
+                <h3>Blazing Fast Performance</h3>
+                <p>Enjoy lightning-fast load times and smooth operations, ensuring you never miss a beat.</p>
+            </div>
+            <div class="feature-item">
+                <span class="material-icons icon">security</span>
+                <h3>Robust Security Measures</h3>
+                <p>Your data is safe with us. We employ top-tier security protocols to protect your information.</p>
+            </div>
+            <div class="feature-item">
+                <span class="material-icons icon">support_agent</span>
+                <h3>24/7 Dedicated Support</h3>
+                <p>Our expert support team is always ready to assist you, day or night, with any queries.</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Footer Section -->
+<section class="footer-section">
+    <footer>
+        <div class="contact-details">
+            <p>Email: info@yourproduct.com</p>
+            <p>Phone: +234 706-591-7720</p>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 3MTTProduct. All rights reserved. Designed for project submission.</p>
+    </footer>
+</section>
+</body>
+</html>
